@@ -4,9 +4,9 @@ object detection은 위치의 파악과 분류의 문제를 동시에 고려해�
 
 [ 2 - Stage Detector ] : 말 그대로 두 단계 작동함
 
-  1) 관심영역(ROI) 추출
+  1) 오브젝트가 있을 것 같은 후보(ROI - Region Of Interest : 관심영역) 추출
   2) ROI 각각에 대해 합성곱 네트워크의 입력에 맞춰 정사각형으로 크기 조정
-  3) CNN을 사용하여 ROI 분류
+  3) CNN을 사용하여 클래스 분류 -> 경계박스(Bound Box) 추출
 
   예시) Faster R-CNN, Feature Pyramid Network(FPN) 등
 
@@ -24,9 +24,11 @@ object detection은 위치의 파악과 분류의 문제를 동시에 고려해�
 
 
 
+---
 
-카메라 사진 촬영시의 object detection은 정확도뿐만 아니라 real-time으로 수행되는 것도 무지 중요함!!
-=> yolo 자주 사용
+카메라 사진 촬영시의 object detection은 
+모델의 정확도뿐만 아니라 real-time으로 객체 검출이 수행되는 것도 무지 중요함!!
+=> 2 stage detection의 느린 속도를 보완하여 탐지와 분류를 한 번이 시행하는 YOLO (1 stage detection) 자주 사용
 
 
 
