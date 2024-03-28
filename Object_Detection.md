@@ -20,8 +20,17 @@ object detection은 위치의 파악과 분류의 문제를 동시에 고려해�
 ---
 
 [ 1 - Stage Detector ] : 1단계 만에 ROI 추출과 객체인식 진행
+    
     YOLO : 사전 학습된 CNN 모델을 변형하여 사용. 
 
+1. 이미지 전체를 한번만 본다. 쉽게 말해, 이전의 R-CNN계열의 방식처럼 이미지를 여러 장 분할해서 여러번 분석하는 일을 하지 않는다는 의미다. YOLO는 원본 이미지 그대로를 CNN에 통과시킨다.
+2. 통합된 모델을 사용한다. 기존에는 region proposal, feature extraction, classification, bbox regression 등의 작업을 별도로 진행했다면,
+  YOLO는 한 모델만을 사용해 앞의 과정들을 한 번에 진행한다. 따라서 속도가 이전 모델들에 비해 상대적으로 빠르고 그로 인해 실시간으로 객체를 탐지할 수 있다.
+3. 이미지 전체를 처리하기 때문에 객체 주변정보까지 학습하여 background error가 적다.
+4. 훈련단계에서 보지 못한 새로운 이미지에 대해서도 검출 정확도가 높다. 
+
+Yolo가 유명해진 이유는 높은 성능은 아니더라도 실시간으로  object detection이 가능하고 기존의  Faster R-CNN 보다 6배 빠른 성능을 보였기 때문이다.
+하지만 R-CNN계열 모델들에 비해 낮은 정확도를 가지고 있으며 특히 작은 객체에 대해 정확도가 아쉬울 정도로 낮은 편이다.
 
 
 ---
@@ -34,3 +43,4 @@ object detection은 위치의 파악과 분류의 문제를 동시에 고려해�
 
 출처
 https://kau-deeperent.tistory.com/155
+https://dotiromoook.tistory.com/24
