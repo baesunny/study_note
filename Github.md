@@ -1,4 +1,4 @@
-## Github 활용법 
+## Github STUDY
 
 ### 목차
 1. Github 기본 용어
