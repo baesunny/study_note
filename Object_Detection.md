@@ -9,17 +9,17 @@ object detection은 위치의 파악과 분류의 문제를 동시에 고려해�
   3) CNN을 사용하여 클래스 분류 -> 경계박스(Bound Box) 추출
 
   예시) Faster R-CNN, Feature Pyramid Network(FPN) 등
-
-  - R-CNN: 객체인식을 위한 가장 기본적이고 대표적인 학습모델.
+      
+      R-CNN: 객체인식을 위한 가장 기본적이고 대표적인 학습모델.
             관심영역 선정 -> 영역 크기 통일 -> CNN 전방 전파연산을 통한 특징추출 -> SVM(Support Vector Machine)으로 분류 -> 위치 회귀
-  - Faster R-CNN : 1단계에서는 CNN과 영역 제안망을 통해 사진단위로 수행 -> 2단계에서는 영역 단위로 ROI 요약 및 정렬, 객체 분류 및 위치 예측
-  - 
-
+            
+    
+    Faster R-CNN : 1단계에서는 CNN과 영역 제안망을 통해 사진단위로 수행 -> 2단계에서는 영역 단위로 ROI 요약 및 정렬, 객체 분류 및 위치 예측
 
     
 ---
 
-[ 1 - Stage Detector ] : 1단계 만에 ROI 추출과 객체인식 진행
+⭐️ [ 1 - Stage Detector ] : 한 단계 만에 ROI 추출과 객체인식 진행 => 한 번에!!
     
     YOLO : 사전 학습된 CNN 모델을 변형하여 사용. 
 
