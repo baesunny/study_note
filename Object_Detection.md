@@ -39,7 +39,13 @@ Yolo가 유명해진 이유는 높은 성능은 아니더라도 실시간으로 
 
 카메라 사진 촬영시의 object detection은 
 모델의 정확도뿐만 아니라 real-time으로 객체 검출이 수행되는 것도 무지 중요함!!
-=> 2 stage detection의 느린 속도를 보완하여 탐지와 분류를 한 번이 시행하는 YOLO (1 stage detection) 자주 사용
+
+real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트는 바로 속도
+
+=> 2 stage detection의 느린 속도를 보완하여 탐지와 분류를 한 번이 시행하는 YOLO(1 stage detection)가 자주 사용됨.
+
+---
+
 
 
 
