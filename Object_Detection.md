@@ -37,6 +37,7 @@ Yolo가 유명해진 이유는 높은 성능은 아니더라도 실시간으로 
 
 ---
 
+
 ## Why YOLO?
 
 카메라 사진 촬영시의 object detection은 
@@ -51,6 +52,7 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 
 ---
 
+
 ## 동작과정
 
 1. 먼저 사진이 입력되면 가로 세로를 동일한 그리드 영역으로 나눈다. 
@@ -58,6 +60,16 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
    이와 동시에 각각이 어떤 사물인지에 대한 classification 작업이 동시에 진행된다.  >>  한 번에 진행~!
 3. 최종적으로 굵은 박스들만 남기고 얇은 것들(사물이 있을 확률이 낮은 것들)은 지워 준다.
 4. 최종 경계박스들을  NMS(Non- Maximum Suppression) 알고리즘을 이용해 선별
+
+
+---
+
+## NMS가 뭐임?
+- NON MAXIMUM SUPPRESSION
+- Detected 된 bounding box 별로 Confidence threshold 이하의 bounding box는 제거
+- 가장 높은 confidence score를 가진 box 순으로 내림차순 정렬하고 아래 로직을 모든 box에 순차적으로 적용
+- 가장 높은 confience score를 가진 box와 곂치는 다른 box를 모두 조사하여 IOU가 특정 threshold 이상인 box를 모두 제거. 즉 IOU(아래 설명)가 일정 이상인 boundingbox는 동일한 물체를 detect 했다고 판단하고 곂치는 box를 제거해 주는 과정
+- 남아 있는 box만 최종 선택
 
 ---
 
@@ -67,13 +79,10 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
   - "One-Stage Detector"를 사용하여 실시간 탐지 가능,
   - One-Stage Detector 구현을 위해 Loss Function에서 바운딩 박스의 크기, 위치, Class 종류까지 학습.
 
- 
-
 - YOLOv2
   - v1에 마지막에 들어가는 FC Layer대신 앵커박스 개념 도입 -> 바운딩 박스의 위치 정보를 살리기 위함
   - 416으로 이미지 크기를 늘려 작은 물체도 감지하기 쉽게 (224 -> 416),
   - BatchNormalization, Skip-connection 등 추가
-
  
 - YOLOv3
   - 3개의 feature map과 더욱 많은 수의 모델 파라미터 (53 layer) v2에 비해 큰 차이 없음.
@@ -84,11 +93,25 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 - VOLOv5
   - v4에서 backbone을 EfficientNet으로 변경. mAP는 비슷하나 더욱 가볍고 빠름. (pytorch로 구현, v4는 Darknet)
 
+
+---
+
+## [인공지능 딥러닝 Object Detection을 사용한 눈 검출(Eye-AF) 구현하기] 예시
+
+https://blog.naver.com/PostView.naver?blogId=gonman2k&logNo=222081895051
+위의 링크 들어가면 해당 내용에 대한 설명 적혀있는데 그닥 구체적이지는 않음.
+다만 이목구비의 일부를 감지하기 위해서는 데이터를 라벨링하여 학습시켜줘야 한다는 방향성을 얻을 수 있었음.
+또한, 저 사람이 사용한 라이브러리는 Halcon20.05 버전이었는데 너무 비싸기도 하고 굳이 싶음.
+(사용 모델도 안 나와있고.... 쳇)
+
 ---
 
 출처
-https://kau-deeperent.tistory.com/155
-https://dotiromoook.tistory.com/24
-
-https://mvje.tistory.com/111 
-> 학습과정 코드 구체적으로 제시되어 있음.
+- https://kau-deeperent.tistory.com/155
+- https://dotiromoook.tistory.com/24
+    > 👍🏻
+- https://187cm.tistory.com/26
+- https://mvje.tistory.com/111 
+    > 학습과정 코드 구체적으로 제시되어 있음.
+- NMS: https://naknaklee.github.io/etc/2021/03/08/NMS/
+- 
