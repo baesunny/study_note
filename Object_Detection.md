@@ -38,7 +38,7 @@ Yolo가 유명해진 이유는 높은 성능은 아니더라도 실시간으로 
 ---
 
 
-## Why YOLO?
+## ✅ Why YOLO?
 
 카메라 사진 촬영시의 object detection은 
 모델의 정확도뿐만 아니라 real-time으로 객체 검출이 수행되는 것도 무지 중요함!!
@@ -53,7 +53,7 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 ---
 
 
-## 동작과정
+## ✅ 동작과정
 
 1. 먼저 사진이 입력되면 가로 세로를 동일한 그리드 영역으로 나눈다. 
 2. 그 후 각 그리드 영역에 대해서 **어디에 사물이 존재하는지 바운딩박스와 박스에 대한 신뢰도 점수를 예측**한다. 신뢰도가 높을수록 굵은 박스!!!
@@ -64,7 +64,7 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 
 ---
 
-## NMS가 뭐임?
+## ✅ NMS가 뭐임?
 - NON MAXIMUM SUPPRESSION
 - Detected 된 bounding box 별로 Confidence threshold 이하의 bounding box는 제거
 - 가장 높은 confidence score를 가진 box 순으로 내림차순 정렬하고 아래 로직을 모든 box에 순차적으로 적용
@@ -73,7 +73,7 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 
 ---
 
-## version 별 YOLO 모델 특징 요약
+## ✅ version 별 YOLO 모델 특징 요약
 
 - YOLOv1
   - "One-Stage Detector"를 사용하여 실시간 탐지 가능,
@@ -96,12 +96,16 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 
 ---
 
-## [인공지능 딥러닝 Object Detection을 사용한 눈 검출(Eye-AF) 구현하기] 예시
+## ✅ [인공지능 딥러닝 Object Detection을 사용한 눈 검출(Eye-AF) 구현하기] 예시
 
 https://blog.naver.com/PostView.naver?blogId=gonman2k&logNo=222081895051
+
 위의 링크 들어가면 해당 내용에 대한 설명 적혀있는데 그닥 구체적이지는 않음.
+
 다만 이목구비의 일부를 감지하기 위해서는 데이터를 라벨링하여 학습시켜줘야 한다는 방향성을 얻을 수 있었음.
+
 또한, 저 사람이 사용한 라이브러리는 Halcon20.05 버전이었는데 너무 비싸기도 하고 굳이 싶음.
+
 (사용 모델도 안 나와있고.... 쳇)
 
 ---
@@ -114,4 +118,3 @@ https://blog.naver.com/PostView.naver?blogId=gonman2k&logNo=222081895051
 - https://mvje.tistory.com/111 
     > 학습과정 코드 구체적으로 제시되어 있음.
 - NMS: https://naknaklee.github.io/etc/2021/03/08/NMS/
-- 
