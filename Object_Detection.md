@@ -1,8 +1,8 @@
-## Object_Detection STUDY
+## 📸 YOLO model
+
 object detection은 위치 파악과 분류의 문제를 동시에 고려해야 한다.
 
-
-[ 2 - Stage Detector ] : 말 그대로 두 단계 작동함
+📝 [ 2 - Stage Detector ] : 말 그대로 두 단계 작동함
 
   1) 오브젝트가 있을 것 같은 후보(ROI - Region Of Interest : 관심영역) 추출
   2) ROI 각각에 대해 합성곱 네트워크의 입력에 맞춰 정사각형으로 크기 조정
@@ -18,10 +18,8 @@ object detection은 위치 파악과 분류의 문제를 동시에 고려해야 
 Faster R-CNN 
 : 1단계에서는 CNN과 영역 제안망을 통해 사진단위로 수행 -> 2단계에서는 영역 단위로 ROI 요약 및 정렬, 객체 분류 및 위치 예측
 
-    
----
 
-⭐️ [ 1 - Stage Detector ] : 한 단계 만에 ROI 추출과 객체인식 진행 => 한 번에!!
+⭐️ 📝 [ 1 - Stage Detector ] : 한 단계 만에 ROI 추출과 객체인식 진행 => 한 번에!!
     
     YOLO : 사전 학습된 CNN 모델을 변형하여 사용. 
 
