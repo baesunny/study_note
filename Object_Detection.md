@@ -1,5 +1,5 @@
 ## Object_Detection STUDY
-object detection은 위치의 파악과 분류의 문제를 동시에 고려해야 한다.
+object detection은 위치 파악과 분류의 문제를 동시에 고려해야 한다.
 
 
 [ 2 - Stage Detector ] : 말 그대로 두 단계 작동함
@@ -37,12 +37,27 @@ Yolo가 유명해진 이유는 높은 성능은 아니더라도 실시간으로 
 
 ---
 
+## Why YOLO?
+
 카메라 사진 촬영시의 object detection은 
 모델의 정확도뿐만 아니라 real-time으로 객체 검출이 수행되는 것도 무지 중요함!!
 
 real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트는 바로 속도
 
-=> 2 stage detection의 느린 속도를 보완하여 탐지와 분류를 한 번이 시행하는 YOLO(1 stage detection)가 자주 사용됨.
+=> 1 stage detection 사용
+2 stage detection의 느린 속도를 보완하여 탐지와 분류를 한 번이 시행하는 YOLO(1 stage detection)가 자주 사용됨. region proposal, feature extraction, classification, bbox regression >> 이 과정을 하나의 Stage로 합침)
+
+
+
+---
+
+## 동작과정
+
+1. 먼저 사진이 입력되면 가로 세로를 동일한 그리드 영역으로 나눈다. 
+2. 그 후 각 그리드 영역에 대해서 **어디에 사물이 존재하는지 바운딩박스와 박스에 대한 신뢰도 점수를 예측**한다. 신뢰도가 높을수록 굵은 박스!!!
+   이와 동시에 각각이 어떤 사물인지에 대한 classification 작업이 동시에 진행된다.  >>  한 번에 진행~!
+3. 최종적으로 굵은 박스들만 남기고 얇은 것들(사물이 있을 확률이 낮은 것들)은 지워 준다.
+4. 최종 경계박스들을  NMS(Non- Maximum Suppression) 알고리즘을 이용해 선별
 
 ---
 
@@ -52,3 +67,6 @@ real-time으로 객체 검출하는 작업에서의 가장 중요한 포인트�
 출처
 https://kau-deeperent.tistory.com/155
 https://dotiromoook.tistory.com/24
+
+https://mvje.tistory.com/111 
+> 학습과정 코드 구체적으로 제시되어 있음.
