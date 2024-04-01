@@ -63,6 +63,15 @@ FastAPI : 파이썬 쪽의 API (토큰 받아서 사용하는 방식 공부해�
 
 
 ---
+## NEW TASK
+
+1. 몽고디비에서 'plbc.ContainerIoResult', 'plbc.ContainerInOut' 두 컬렉션의 전체 데이터 가져오기
+2. plbcContainerIoResult는 'copionSeq'기준, plbcContainerInOut는 '_id' 기준으로 join 진행
+3. join 결과 csv파일로 저장
+
+>>각 단계별로 시간 얼마나 걸리는지 체크할 것.
+
+
 
 - 몽고디비에서 대용량의 데이터 가져올 때 가장 빠른 형태 (상위 항목부터 순서대로)
       - JSON(JavaScript 개체 표기법)
