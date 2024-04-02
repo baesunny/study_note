@@ -74,7 +74,12 @@ FastAPI : 파이썬 쪽의 API (토큰 받아서 사용하는 방식 공부해�
 ---
 근데 왜 동일한 코드를 실행시킬 때마다 시간이 달라질까??
 
+![image](https://github.com/baesunny/study_note/assets/133308712/dba1c484-1896-4c03-bab7-cb61a943b728)
 
+![image](https://github.com/baesunny/study_note/assets/133308712/236b556d-edc2-47a7-96bc-7283df08632a)
+
+
+데이터를 불러올 때 시간이 얼마나 걸리는지 확인하고 측정하는 것은 아주 중요한데, 코드를 실행할 때마다 시간이 다르게 측정되니 증말 난감하다ㅠㅠ
 
 
 - 몽고디비에서 대용량의 데이터 가져올 때 가장 빠른 형태 (상위 항목부터 순서대로)
