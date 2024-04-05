@@ -17,11 +17,11 @@
 ---
 **✅ 4월 이론공부 목표**
 
-1. rnn 공부 후 블로그 작성ㅎ
-2. javascript 기초 공부
-3. 백준 javascript 10문제 이상 풀기
+1. RNN 공부 후 블로그 작성하기
+2. JavaScript 기초 공부
+3. 백준 JavaScript 10문제 이상 풀기
 4. lstm 공부 후 블로그 작성
-5. attention is all you need 리뷰
+5. Attention is All You Need 리뷰
 
 ---
 **✅ 4월 프로그램 진행 목표**
