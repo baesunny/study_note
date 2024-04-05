@@ -10,14 +10,14 @@
 2. Github.md
 3. mongoDB.md
 4. MongoDB_ImportData.ipynb
-5. DL_study
-6. JavaScript.md
+5. DL_study (교재 : 파이썬 딥러닝 파이토치)
+7. JavaScript.md
 
 
 ---
 **✅ 4월 이론공부 목표**
 
-1. rnn 공부 후 블로그 작성
+1. rnn 공부 후 블로그 작성ㅎ
 2. javascript 기초 공부
 3. 백준 javascript 10문제 이상 풀기
 4. lstm 공부 후 블로그 작성
