@@ -5,7 +5,7 @@
 정리된 내용을 보고싶으시다면 'https://sunnybae1023.tistory.com/' 으로 이동하시기 바랍니다.
 
 ---
-**💻Study Note LIST💻**
+## 📚 Study Note LIST 📝
 
 1. FastAPI.md
 2. Github.md
