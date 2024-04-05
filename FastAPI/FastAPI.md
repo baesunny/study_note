@@ -25,3 +25,13 @@ def home():
 
 
 5. 기본 app을 생성하였다면 아래의 코드를 입력하여 앱을 실행한다.
+
+<pre>
+<code>
+uvicorn main:app
+</code>
+</pre>
+
+uvicorn은 웹서버를 구동하라는 명령어로 main.py 파일의 app을 실행하라는 의미이다.
+
+
