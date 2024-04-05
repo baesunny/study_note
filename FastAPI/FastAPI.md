@@ -12,15 +12,16 @@ API 개발에 특히 초점을 맞추어 설계되었고 높은 성능과 직관
 3. 기본 app 만들기
 
    
-'''python
+<pre>
+<code>
 import fastapi
-
 app = fastapi.FastAPI()
 
 @app.get('/')
 def home():
    return {"message": "Welcome Home!"}
-'''
+</code>
+</pre>
 
 
 5. 기본 app을 생성하였다면 아래의 코드를 입력하여 앱을 실행한다.
