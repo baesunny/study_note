@@ -4,7 +4,7 @@
 
 정리된 내용을 보고싶으시다면 'https://sunnybae1023.tistory.com/' 으로 이동하시기 바랍니다.
 
-## Study Note LIST
+## ☑️ Study Note LIST
 
 1. FastAPI.md
 2. Github.md
@@ -15,7 +15,7 @@
 
 
 ---
-**✅4월 이론공부 목표**
+**✅ 4월 이론공부 목표**
 
 1. rnn 공부 후 블로그 작성
 2. javascript 기초 공부
@@ -24,14 +24,14 @@
 5. attention is all you need 리뷰
 
 ---
-**✅4월 프로그램 진행 목표**
+**✅ 4월 프로그램 진행 목표**
 
 1. roboflow 활용해서 데이터 annotation 진행
 2. object tracking 직전 단계까지의 데이터 준비 / 사전 조사 완료할 것.
 3. 5/1 중간발표 준비
 
 ---
-**✅4월 인턴일지**
+**✅ 4월 인턴일지**
 
 1. fastAPI 공부하기
 2. plbc 홈페이지 개발
