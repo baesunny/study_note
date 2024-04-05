@@ -10,15 +10,17 @@ API 개발에 특히 초점을 맞추어 설계되었고 높은 성능과 직관
 2. 터미널에서 pip isntall fastapi uvicorn 입력
 
 3. 기본 app 만들기
+
    
-   '''
-   import fastapi
+'''python
+import fastapi
 
-   app = fastapi.FastAPI()
+app = fastapi.FastAPI()
 
-   @app.get('/')
-   def home():
-     return {"message": "Welcome Home!"}
-   '''
+@app.get('/')
+def home():
+   return {"message": "Welcome Home!"}
+'''
+
 
 5. 기본 app을 생성하였다면 아래의 코드를 입력하여 앱을 실행한다.
