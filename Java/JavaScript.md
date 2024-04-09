@@ -1,3 +1,9 @@
+자바 기본구조: https://dinfree.com/lecture/language/112_java_2.html
+
+
+
+---
+
 ## console.log 는 콘솔에 특정 내용을 출력하라는 것을 의미
 
 console.log('Hello, JavaScript!');
