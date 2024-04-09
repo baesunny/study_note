@@ -21,6 +21,8 @@ VScode로 아주 아주 쉽게 할 수 있습니당
     
     [Visual Studio Code에서 Git으로 협업하기 - 1. github.com](https://youtu.be/vI8FFvQge2w?si=HnPC04jS1-2wNE-L)
 
+>내가찾은거아니고지원언니가정리해준거보고공부함...
+
 ---
 
 1. 저장소(Repository) :
