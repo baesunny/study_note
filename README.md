@@ -6,13 +6,11 @@
 
 ## ☑️ Study Note LIST
 
-1. FastAPI.md
-2. Github.md
-3. mongoDB.md
-4. MongoDB_ImportData.ipynb
-5. DL_study (교재 : 파이썬 딥러닝 파이토치)
-7. JavaScript.md
-
+1. DL_study
+2. FastAPI
+3. INTERN
+4. JAVA
+5. github
 
 ---
 **✅ 4월 이론공부 목표**
