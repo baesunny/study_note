@@ -18,7 +18,7 @@
 1. RNN/LSTM 공부 후 블로그 작성하기 
 2. Java 기초 공부 후 블로그 작성하기 ✅
 3. 백준/프로그래머스 10문제 이상 풀고 깃허브 연동 🌀
-4. Attention is All You Need 리뷰
+4. Attention is All You Need 리뷰 🌀
 
 ---
 **📍 4월 프로젝트 진행 목표**
