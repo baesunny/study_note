@@ -6,9 +6,9 @@
 
 ## 📝 Study Note LIST
 
-1. DL_study
+1. INTERN
 2. FastAPI
-3. INTERN
+3. DL_study
 4. JAVA
 5. github
 
