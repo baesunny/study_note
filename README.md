@@ -24,8 +24,8 @@
 **📍 4월 프로젝트 진행 목표**
 
 1. 데이터 500개 선정 🌀
-2. 데이터 cropping해서 Augmentation 진행
-3. Annotation (<< 가능한 데까지)
+2. 데이터 cropping해서 Augmentation 진행 🌀
+3. Annotation (<< 가능한 데까지) 🌀
 4. 5/1 중간발표 준비
 
 ---
