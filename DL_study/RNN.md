@@ -41,3 +41,6 @@
     모든 Timestep마다 새로운 인풋이 들어오면서 다른 반응 결과를 출력하는데, 이를 통해 다른 Timestep에서 다른 예측을 하는 것을 원하게 됨.
 
 ​
+- 특징
+  1) 모든 time step마다 동일한 function과 동일한 parameter를 사용해야 한다.
+  2) 
