@@ -29,15 +29,16 @@
 - RNN 진행과정
 
   1) input
-     우선 시퀀스 데이터 즉 정보는 벡터로 표현되어 model에 input. 만약 데이터가 TEXT이다? 벡터로 표현하기 위해 Word embedding 진행함.
+     우선 시퀀스 데이터 즉 정보는 벡터로 표현되어 model에 input. 만약 데이터가 TEXT이다? 벡터로 표현하기 위해 Word embedding 진행
+     word embedding: 
 
-  2) State
+  3) State
      input인 벡터(가공된 정보)는 순서(Timestep)에 따라 순환신경망의 상태(State, 초록색 상자)에 저장됨. 이 상태(state)는 함수로 변형될 수 있으며, 함수(f)는 파라미터 W(가중치)와 이       전 상태(old state), input로 구성되어 있다.
 
-  3) update
+  4) update
     그리고 W(가중치)가 튜닝되면서 계속 발전(Update)해나감.
 
-  4) output
+  5) output
     모든 Time Step마다 새로운 인풋이 들어오면서 다른 반응 결과를 출력하는데, 이를 통해 다른 Timestep에서 다른 예측을 하는 것을 원하게 됨.
 
 ​
