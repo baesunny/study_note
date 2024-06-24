@@ -9,6 +9,8 @@
 
 1. Deep Learning (Yann LeCun, Yoshua Bengio & Geoffrey Hinton) 논문 리뷰
 2. 딥러닝 1-9주차 강의자료 끝내기
+   - 1주차
+   - 2주차
 
 ---
 **📍 6-7월 프로젝트 진행 목표**
