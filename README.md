@@ -5,12 +5,13 @@
 정리된 내용이 궁금하시다면 'https://sunnybae1023.tistory.com/' 으로 이동하시기 바랍니다.
 
 ---
-**📍 6-7월 이론공부 목표**
+**📍 6-7월 공부 목표**
 
 1. Deep Learning (Yann LeCun, Yoshua Bengio & Geoffrey Hinton) 논문 리뷰
 2. 딥러닝 1-9주차 강의자료 끝내기
    - 1주차 ✅
    - 2주차 ✅
+3. JLPT N2 자격증 공부 🌀
 
 ---
 **📍 6-7월 기타 활동**
